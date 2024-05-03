@@ -156,3 +156,15 @@ function LeiaMais(){
 
 	}
 }
+
+const slider = document.querySelector('.card-slider');
+const prevArrow = document.querySelector('.prev-arrow');
+const nextArrow = document.querySelector('.next-arrow');
+
+prevArrow.addEventListener('click', () => {
+  slider.scrollLeft -= slider.clientWidth;
+});
+
+nextArrow.addEventListener('click', () => {
+  slider.scrollLeft += slider.clientWidth;
+});
