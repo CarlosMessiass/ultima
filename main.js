@@ -156,26 +156,3 @@ function LeiaMais(){
 
 	}
 }
-const carousel = document.querySelector('.carousel');
-const carouselItems = carousel.querySelectorAll('.carousel-item');
-const carouselWidth = carousel.offsetWidth;
-
-function adjustCarousel() {
-  const itemWidth = Math.floor(carouselWidth / 3); // Change this value based on the number of images you want to show
-  const marginRight = 30; // Change this value based on your CSS
-
-  carouselItems.forEach(item => {
-    item.style.width = `${itemWidth}px`;
-    item.style.marginRight = `${marginRight}px`;
-  });
-
-  const lastItem = carouselItems[carouselItems.length - 1];
-  if (lastItem.offsetLeft + lastItem.offsetWidth > carousel.offsetWidth) {
-    carousel.style.overflow = 'hidden';
-  } else {
-    carousel.style.overflow = 'visible';
-  }
-}
-
-window.addEventListener('resize', adjustCarousel);
-adjustCarousel();
