@@ -1338,54 +1338,59 @@ footer .copyright {
 
 /* rodapé */
 
-footer{
-  padding: 40px 4%;
-  background: linear-gradient(#353333, #000000);
-  box-shadow: 0 0 40px 10px #ffffff1d;
+footer {
+  background: linear-gradient(to left, #f5f5f5, #eee, #ddd, #ccc, #bbb);
+  padding: 30px 0;
+  color: #333;
 }
 
-footer .flex {
-  justify-content: space-between;
+.logo-footer {
+  margin-bottom: 20px;
 }
 
-footer .line-footer p i {
-  color: #ffffff;
-  font-size: 20px;
-  display: flex;
+.social-links {
+  margin-top: 20px;
 }
 
-footer .line-footer a {
-  color: #fff;
+.social-links a {
+  margin-right: 20px;
+  color: #000000;
+  transition: color 0.2s ease;
 }
 
-footer .logo-footer {
-  display: flex;
+.social-links a:hover {
+  color: #f0d32a;
 }
 
-footer .btn-social button {
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  border: none;
-  background-color: #d3b71a;
-  font-size: 22px;
-  cursor: pointer;
-  margin: 0 5px;
-  transition: .2s;
+.contact-info {
+  margin-top: 20px;
 }
 
-
-footer h6 {
-  color: #fff;
-  display: flex;
+.contact-info svg {
+  margin-right: 10px;
 }
 
-footer .extra-small {
-  font-size: 0.5em;
+.copyright-box {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.service-content a {
+.copyright {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.extra-small {
+  font-size: 12px;
+  color: #000000;
+}
+
+.contact-info a {
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
   color: #f0d32a;
 }
 
@@ -1528,6 +1533,7 @@ h6{
   height: 200px;
   object-fit: cover;
   border-radius: 0 0 0 40px;
+  box-shadow: 1px 1px 1px 1px #000000;
 }
 
 .card h2 {
@@ -1575,4 +1581,36 @@ h6{
 
 .card span {
   color: #f0d32a;
+}
+
+.btn-resp button {
+  background-color: #000000;
+  border:1px, #f0d32a;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 330px;
+  right:470px;
+}
+
+h6{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.yellow-button:hover {
+  background-color: #f0d32a;
+  transition: all 700ms ease;
+  color: #000000;
+}
+
+
+.yellow-button:active {
+  background-color: #f0d32a;
 }
