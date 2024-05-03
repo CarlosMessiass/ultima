@@ -1508,9 +1508,7 @@ h6{
   transform: translateY(-5px);
 }
 
-<<<<<<< HEAD
 
-=======
 /* Card slide */
 
 .card {
@@ -1579,4 +1577,29 @@ h6{
 .card span {
   color: #f0d32a;
 }
->>>>>>> a3d67d562a0c6edfa6f9c29f2fc4fe353f841470
+.btn-social{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  
+
+}
+.interface{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+ 
+
+
+
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+h6 span::after{
+  text-decoration: none;
+  text-transform: none;
+}
