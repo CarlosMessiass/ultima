@@ -168,3 +168,62 @@ prevArrow.addEventListener('click', () => {
 nextArrow.addEventListener('click', () => {
   slider.scrollLeft += slider.clientWidth;
 });
+
+// Saiba Mais PDV
+
+const scrollButton = document.getElementById('scroll-button');
+const targetSection = document.getElementById('target-section');
+
+scrollButton.addEventListener('click', () => {
+  const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
+});
+
+// Formulario
+
+$(document).ready(function() {
+	$("#cf").validate({
+	  rules: {
+		name: {
+		  required: true,
+		  minlength: 4
+		},
+		email: {
+		  required: true,
+		  email: true
+		},
+		subject: {
+		  required: true,
+		  minlength: 8
+		},
+		message: {
+		  required: true,
+		  minlength: 20
+		}
+	  },
+	  messages: {
+		name: {
+		  required: "Please enter your name",
+		  minlength: "Your name must be at least 4 characters long"
+		},
+		email: {
+		  required: "Please enter your email",
+		  email: "Please enter a valid email address"
+		},
+		subject: {
+		  required: "Please enter a subject",
+		  minlength: "The subject must be at least 8 characters long"
+		},
+		message: {
+		  required: "Please enter a message",
+		  minlength: "The message must be at least 20 characters long"
+		}
+	  },
+	  submitHandler: function(form) {
+		form.submit();
+	  }
+	});
+  });

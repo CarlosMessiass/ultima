@@ -72,7 +72,9 @@
                     <h1 class="intro-title mb-4">Sistema PDV</h1>
                     <p class="intro-subtitle">Realize compras para seu negócio de simples e pratica.</p> <span></span>
                     <div class="col-md-12">
+                    <section id="target-section" class="section-with-padding"></section>
                       <button name="serviço" class="button button-a button-big button-rouded"> Saiba Mais</button>
+                    </section>
                   </div>
                 </div>
             </div>
@@ -322,7 +324,7 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
                     </h3>
                     <div class="line-mf"></div>
                     <br>
-                                    <div id="sistemapdv" class="box-shadow-full" style="text-align: center;">
+                                    <div id="target-section" class="box-shadow-full" style="text-align: center;">
                                         <div class="row">
                                             <h5 class="title-left">
                                                             Sistema PDV 
@@ -374,6 +376,8 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
                                                                                                                                     Em breve, a Volgue Sistemas lançará seu novo aplicativo, oferecendo praticidade e eficiência aos usuários. Com recursos inovadores e interface intuitiva, nosso app promete revolucionar a experiência tecnológica. Desenvolvido com tecnologia de ponta, ele proporcionará soluções personalizadas para atender às necessidades individuais dos clientes Esteja pronto para explorar a próxima geração de serviços e suporte da Volgue Sistemas. Em breve disponível nas principais lojas de aplicativos<span id="pontos">...</span><span id="mais"><br><br>Fique atento para descobrir como nossa equipe dedicada e talentosa está elevando o padrão de excelência no mundo da tecnologia. Com um compromisso inabalável com a inovação, estamos moldando o futuro digital com o nosso novo aplicativo. Não perca a oportunidade de fazer parte dessa revolução. Acompanhe-nos para uma jornada emocionante rumo à excelência tecnológica. Estamos ansiosos para compartilhar essa experiência com você.</span></p>
                                                                                                                                     
                                                                                                                                     <button onclick="LeiaMais()" id="btnLeiaMais">Leia Mais</button>
+                                                                                                                </div>
+                                                                                                                </div>
                                                                                                                 </div>
                                                                                                                         
                                                                                                                     <br>
@@ -435,6 +439,7 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
 </div>
 </div>
 </div>
+
 </section>
 <div id="home" class="intro route bg-image" style="background-image: url('img/fundo_walpapers.jpg'); ">
     <div class="overlay-itro"></div>
@@ -494,12 +499,13 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
             </div>
             <div class="more-info">
                 <p class="lead">
-                    Entre em contato com a gente através do nosso instagram!
+                 Entre em contato com a gente através do nosso instagram!
+                 <i class="fa-brands fa-instagram"></i>
                 </p>
                 <ul class="list-ico">
                     <li><span class="ion-ios-location"></span> Address</li>
-                    <li><span class="ion-ios-telephone"></span> +1 213123123</li>
-                    <li><span class="ion-email"></span> test@hotmail.com</li>
+                    <li><span class="ion-ios-telephone"></span><i class="fa-brands fa-whatsapp"> +1 213123123</li></i><br>
+                    <li><span class="ion-email"></span><i class="fa fa-envelope"> volguesistemas@gmail.com</li></i>
                 </ul>
             </div>
               <ul>
@@ -515,40 +521,55 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
 </div>
 </div>           
 
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="logo-footer">
-          <img src="img/logo_semfundo.png" width="180px" alt="Logotipo Volgue Sistemas">
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logo-rodapé">
+            <img src="img/logo_semfundo.png" alt="Logo">
+          </div>
+          <div class="sobre-rdp">
+            <h6>Sobre</h6>
+            <p class="lead">A Volgue Sistemas é uma empresa de tecnologia brasileira que se destaca no desenvolvimento de soluções de software para diferentes setores.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Links</h6>
+              <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#service">Serviços</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-6">
+              <h6>Social</h6>
+              <ul class="footer-links">
+                <li><a href="https://www.instagram.com/volgue_oficial/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="mailto:youremail@yourdomain.com"><i class="fa fa-envelope"></i> volguesistemas@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="social-links">
-          <a href="https://www.instagram.com/volgue_oficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="contact-info">
-          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-          </svg> <a href="mailto:volguesistemas@gmail.com">volguesistemas@gmail.com</a></p>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="copyright-text">Copyright &copy; 2024
+            <br></a></p>
+            <div class="by">
+                <h6>By:</h6>
+                <p class="load"><a href="https://www.instagram.com/_____messias/" target="_blank"><i class="fa-brands fa-instagram"></i>  Carlos Daniel Messias dos Santos</a><br>
+                  <a href="https://www.instagram.com/0messias_/" target="_blank"><i class="fa-brands fa-instagram"></i>  Maria Eduarda Messias dos Santos</a></p>
+              </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="copyright-box">
-          <p class="copyright">© All Rights Reserved</p>
-          <p class="extra-small">Maria Eduarda Messias dos Santos | Carlos Daniel Messias dos Santos</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
 </body>
 </html>

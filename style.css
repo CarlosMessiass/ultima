@@ -1338,60 +1338,83 @@ footer .copyright {
 
 /* rodapé */
 
-footer {
-  background: linear-gradient(to left, #f5f5f5, #eee, #ddd, #ccc, #bbb);
-  padding: 30px 0;
-  color: #333;
+.site-footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 20px 4%;
 }
 
-.logo-footer {
+.site-footer .logo-rodapé {
   margin-bottom: 20px;
 }
 
-.social-links {
-  margin-top: 20px;
+.site-footer .logo-rodapé img {
+  height: 50px;
+  margin-right: 60%;
+  margin-left: 0;
 }
 
-.social-links a {
-  margin-right: 20px;
-  color: #000000;
-  transition: color 0.2s ease;
+.sobre-rdp {
+  position: relative;
+  top: -70px;
+  margin-left: 50%;
 }
 
-.social-links a:hover {
-  color: #f0d32a;
+.site-footer h6 {
+  margin-bottom: 10px;
+  color: #d3b71a;
 }
 
-.contact-info {
-  margin-top: 20px;
+.site-footer .footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.contact-info svg {
-  margin-right: 10px;
+.site-footer .footer-links li {
+  margin: 5px 42%;
 }
 
-.copyright-box {
-  margin-top: 20px;
+.site-footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-footer .footer-links a:hover {
+  color: #d3b71a;
+}
+
+.site-footer .copyright-text {
+  margin: 20px 0;
   text-align: center;
 }
 
-.copyright {
-  font-size: 14px;
-  margin-bottom: 10px;
+@media (max-width: 767.98px) {
+  .site-footer .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-footer .footer-links li {
+    flex: 1 1 auto;
+    margin: 5px;
+  }
 }
 
-.extra-small {
-  font-size: 12px;
-  color: #000000;
+.by h6 {
+  margin-right: 80%;
+  margin-left: 0;
+  margin-top: -5%;
 }
 
-.contact-info a {
-  color: #000000;
-  transition: color 0.2s ease;
+.by p {
+  margin-right: 80%;
+  margin-left: 0;
+  font-size: 10px;
 }
 
-.contact-info a:hover {
-  color: #f0d32a;
+.by a {
+  color: #fff;
 }
 
 /* Cards */
@@ -1425,7 +1448,7 @@ footer {
 }
 
 .container h3 span {
-  color: #f0d32a;
+  color: #ffd900;
 }
 
 .col-md-6 img:hover {
@@ -1464,8 +1487,8 @@ h6{
 }
 
 .yellow-button:hover {
-  background-color: #f0d32a;
-  transition: all 700ms ease;
+  background-color: #ffd900;
+  transform: translateY(2px);
   color: #000000;
 }
 
@@ -1512,6 +1535,7 @@ h6{
 .envolta2 img:hover {
   transform: translateY(-5px);
 }
+
 
 /* Card slide */
 
@@ -1583,6 +1607,8 @@ h6{
   color: #f0d32a;
 }
 
+ /* HEAD */
+
 .btn-resp button {
   background-color: #000000;
   border:1px, #f0d32a;
@@ -1613,4 +1639,49 @@ h6{
 
 .yellow-button:active {
   background-color: #f0d32a;
+}
+
+
+.btn-social{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  
+
+}
+.interface{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+h6 span::after{
+  text-decoration: none;
+  text-transform: none;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 320px;
+  opacity: .9;
+}
+
+.carousel-caption h2 {
+  color: #d3b71a;
+  height: 100px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.more-info i{
+  font-size: 14px;
+  text-align: center;
 }

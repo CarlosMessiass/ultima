@@ -1,20 +1,11 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $subject = $_POST["subject"];
+  $message = $_POST["message"];
 
-    $nome = addslashes($_POST['nome']);
-    $email = addslashes($_POST['email']);
-    $telefone = addslashes($_POST['telefone']);
-
-    $para = "mariaeduardamessias2001@gmail.com";
-    $assunto = "Coleta de dados - Inteliogia";
-
-    $corpo = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: ".$telefone;
-
-    $cabeca = "From: mariaeduardamessias2001@gmail.com"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversion();
-
-    if(mail($para,$assunto,$corpo,$cabeca)){
-        echo("E-mail enviado com sucesso!");
-    }else{
-        echo("Houve um erro ao enviar o email!");
-    }
-
+  header("Location: thank-you.html");
+  exit;
+}
 ?>
