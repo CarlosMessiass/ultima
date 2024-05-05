@@ -227,3 +227,24 @@ $(document).ready(function() {
 	  }
 	});
   });
+
+
+
+  // Add an event listener to the buttons
+document.addEventListener("DOMContentLoaded", function() {
+	const readMoreBtn = document.querySelector(".saiba-mais-btn");
+	const readLessBtn = document.querySelector(".saiba-mais-btn");
+	const collapsibleContent = document.querySelector(".collapsible-content");
+  
+	readMoreBtn.addEventListener("click", function() {
+	  collapsibleContent.style.maxHeight = "500px"; /* adjust the max-height value according to your needs */
+	  readMoreBtn.hidden = true;
+	  readLessBtn.hidden = false;
+	});
+  
+	readLessBtn.addEventListener("click", function() {
+	  collapsibleContent.style.maxHeight = "0";
+	  readMoreBtn.hidden = false;
+	  readLessBtn.hidden = true;
+	});
+  });
