@@ -25,6 +25,27 @@
 </head>
 
 <body id="page-top">
+    <script>
+        function scrollToSection(sectionId, offset = 150) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const sectionOffset = section.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({
+                    top: sectionOffset,
+                    behavior: "smooth"
+                });
+            } else {
+                console.error("Elemento com ID " + sectionId + " não encontrado.");
+            }
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll" href="#page-top">  <img src="img/logo_semfundo.png" width="180" height="auto" alt="Logo">
@@ -108,11 +129,8 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button class="button button-a button-big button-rouded">
-                                <span style="color: inherit; text-decoration: inherit;">
-                                  <a href="#sistemapdv" style="color: inherit; text-decoration: inherit;">Saiba Mais</a>
-                                </span>
-                              </button>                      </div>
+                            <button onclick="scrollToSection('sistemapdv')" name="servico" class="button button-a button-big button-rouded">Saiba Mais</button>
+                        </div>
                     </div>
                     <div class="box-shadow-full" style="text-align: center;">
                       <div class="row">
@@ -137,7 +155,7 @@
                           </div>
                       </div>
                       <div class="col-md-12">
-                        <button name="servico" class="button button-a button-big button-rouded">Saiba Mais</button>
+                        <button onclick="scrollToSection('atendespeci')" name="servico" class="button button-a button-big button-rouded">Saiba Mais</button>
                     </div>
                   </div>
                   <div class="box-shadow-full" style="text-align: center;">
@@ -162,7 +180,7 @@
                                   Em breve, a Volgue Sistemas lançará seu novo aplicativo, oferecendo praticidade e eficiência aos usuários. Com recursos inovadores e interface intuitiva, nosso app promete revolucionar a experiência tecnológica. Desenvolvido com tecnologia de ponta, ele proporcionará soluções personalizadas para atender às necessidades individuais dos clientes. Esteja pronto para explorar a próxima geração de serviços e suporte da Volgue Sistemas. Em breve disponível nas principais lojas de aplicativos.                        </div>
                     </div>
                     <div class="col-md-12">
-                      <button name="servico" class="button button-a button-big button-rouded">Saiba Mais</button>
+                      <button onclick="scrollToSection('appvolgue')"  name="servico" class="button button-a button-big button-rouded">Saiba Mais</button>
                   </div>
                 </div>
                 </div>
@@ -324,9 +342,9 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
                     </h3>
                     <div class="line-mf"></div>
                     <br>
-                                    <div id="target-section" class="box-shadow-full" style="text-align: center;">
+                                    <div  class="box-shadow-full" style="text-align: center;">
                                         <div class="row">
-                                            <h5 class="title-left">
+                                            <h5 id="sistemapdv" class="title-left">
                                                             Sistema PDV 
                                                         </h5>
                                                     </div>
@@ -347,7 +365,7 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
                                                 
                                                                         <div class="box-shadow-full" style="text-align: center;">
                                                                             <div class="row">
-                                                                                <h5 class="title-left">
+                                                                                <h5 id="atendespeci" class="title-left">
                                                                                                 Atendimento Especializado
                                                                                             </h5>
                                                                                         </div>
@@ -366,7 +384,7 @@ Um site estático é uma coleção de páginas da web que exibem conteúdo fixo 
                                                                                 <br>
                                                                                                                 <div class="box-shadow-full" style="text-align: center;">
                                                                                                                     <div class="row">
-                                                                                                                        <h5 class="title-left">
+                                                                                                                        <h5 id="appvolgue" class="title-left">
                                                                                                                                         App Volgue Sistemas 
                                                                                                                                     </h5>
                                                                                                                                 </div>
