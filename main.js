@@ -123,6 +123,8 @@ window.addEventListener("scroll", function(){
 	header.toggle('rolagem', window.scrollY > 0)
 })
 
+// Fim rolagem
+
 // Cookies
 
 var msgCookies = document.getElementById('cookies-msg')
@@ -138,24 +140,35 @@ if(localStorage.lgpd == 'sim'){
 	msgCookies.classList.add('mostrar')
 }
 
+// Fim cookies
+
 // Leia mais
 
 function LeiaMais(){
 	var pontos=document.getElementById("pontos");
 	var maisTexto=document.getElementById("mais");
 	var btnLeiaMais=document.getElementById("btnLeiaMais");
+	var btnLeiaMais2=document.getElementById("btnLeiaMais2");
+	var btnLeiaMais3=document.getElementById("btnLeiaMais3");
 
 	if(pontos.style.display ==="none"){
 		pontos.style.display="inline";
 		maisTexto.style.display="none";
 		btnLeiaMais.innerHTML="Leia Mais";
+		btnLeiaMais2.innerHTML="Leia Mais";
+		btnLeiaMais3.innerHTML="Leia Mais";
 	}else{
 		pontos.style.display="none";
 		maisTexto.style.display="inline";
 		btnLeiaMais.innerHTML="Leia Menos";
-
+		btnLeiaMais2.innerHTML="Leia Menos";
+		btnLeiaMais3.innerHTML="Leia Menos";
 	}
 }
+
+// Fim Leia mais
+
+// Saiba mais
 
 const slider = document.querySelector('.card-slider');
 const prevArrow = document.querySelector('.prev-arrow');
@@ -169,8 +182,6 @@ nextArrow.addEventListener('click', () => {
   slider.scrollLeft += slider.clientWidth;
 });
 
-// Saiba Mais PDV
-
 const scrollButton = document.getElementById('scroll-button');
 const targetSection = document.getElementById('target-section');
 
@@ -181,6 +192,8 @@ scrollButton.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+// Fim saiba mais
 
 // Formulario
 
@@ -227,6 +240,8 @@ $(document).ready(function() {
 	  }
 	});
   });
+
+//   Fim formulario
 
 
 

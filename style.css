@@ -1256,7 +1256,7 @@ footer .copyright {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
   .bg-image {
     background-attachment: scroll;
   }
@@ -1319,6 +1319,8 @@ footer .copyright {
   display: none;
 }   
 
+/* Leia Mais */
+
 #btnLeiaMais {
   display: inline-block;
   padding: .3rem .6rem;
@@ -1333,7 +1335,54 @@ footer .copyright {
   border: 1px solid transparent;
   transition: transform 4s;
   cursor: pointer;
+}
 
+#btnLeiaMais:hover {
+  color: #ffd900;
+}
+
+/* Leia mais 2 */
+
+#btnLeiaMais2 {
+  display: inline-block;
+  padding: .3rem .6rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  transition: transform 4s;
+  cursor: pointer;
+}
+
+#btnLeiaMais2:hover {
+  color: #ffd900;
+}
+
+/* Leia mais 3 */
+
+#btnLeiaMais3 {
+  display: inline-block;
+  padding: .3rem .6rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  transition: transform 4s;
+  cursor: pointer;
+}
+
+#btnLeiaMais3:hover {
+  color: #ffd900;
 }
 
 /* rodapé */
@@ -1692,7 +1741,6 @@ h6 span::after{
 }
 
 .read-more-container {
-  /* Add some basic styling to the container */
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -1701,7 +1749,6 @@ h6 span::after{
 }
 
 .read-more-btn,.read-less-btn {
-  /* Style the buttons */
   background-color: #4CAF50;
   color: #fff;
   border: none;
@@ -1711,17 +1758,24 @@ h6 span::after{
 }
 
 .read-more-btn:hover,.read-less-btn:hover {
-  /* Add a hover effect */
   background-color: #3e8e41;
 }
 
 .collapsible-content {
-  /* Add some basic styling to the collapsible content */
   padding: 20px;
   transition: max-height 0.5s ease-in-out;
 }
 
-/* Add a toggle effect to the collapsible content */
+
 .read-more-btn:focus +.collapsible-content,.read-less-btn:focus +.collapsible-content {
-  max-height: 500px; /* adjust the max-height value according to your needs */
+  max-height: 500px; 
 }
+
+/* Responsivo */
+
+@media screen and (max-width: 1020px) {
+  .services-mf{
+    flex-direction: column;
+  }
+}
+
