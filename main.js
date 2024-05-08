@@ -246,6 +246,7 @@ $(document).ready(function() {
 
 
   // Add an event listener to the buttons
+  
 document.addEventListener("DOMContentLoaded", function() {
 	const readMoreBtn = document.querySelector(".saiba-mais-btn");
 	const readLessBtn = document.querySelector(".saiba-mais-btn");

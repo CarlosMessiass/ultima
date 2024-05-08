@@ -1205,6 +1205,7 @@ footer .copyright {
   .box-shadow-full {
     padding: 3rem;
   }
+}
 
   .navbar-b.navbar-trans .nav-item,
   .navbar-b.navbar-reduce .nav-item {
@@ -1242,7 +1243,6 @@ footer .copyright {
   .box-comments .list-comments .comment-author {
     font-size: 1.5rem;
   }
-}
 
 @media (min-width: 992px) {
   .testimonial-box .description {
@@ -1294,6 +1294,7 @@ footer .copyright {
 
 .cookies-msg .cookies-btn {
   margin-left: 30px;
+  font-family: monospace;
 }
 
 .cookies-msg .cookies-btn button {
@@ -1417,7 +1418,8 @@ footer .copyright {
 .site-footer .footer-links {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 105px;
+  margin-top: -110px;
 }
 
 .site-footer .footer-links li {
@@ -1438,39 +1440,33 @@ footer .copyright {
   text-align: center;
 }
 
-@media (max-width: 767.98px) {
-  .site-footer .footer-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .site-footer .footer-links li {
     flex: 1 1 auto;
     margin: 5px;
   }
-}
 
 .by {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-right: 900px;
-  margin-top: -100px;
+  margin-top: -30px;
   font-size: 12px;
 }
 
 .by li {
-  margin-bottom: 10px; /* add space between authors */
+  margin-bottom: 10px;
 }
 
 .by a {
   text-decoration: none;
-  color: #ffffff; /* adjust the color to your liking */
+  color: #ffffff; 
 }
 
 .by a:hover {
-  color: #d3b71a; /* adjust the hover color to your liking */
+  color: #d3b71a; 
 }
+
 /* Cards */
 
 .card {
@@ -1773,9 +1769,27 @@ h6 span::after{
 
 /* Responsivo */
 
-@media screen and (max-width: 1020px) {
-  .services-mf{
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+ .col-sm-5 {
+      width: 100%;
+  }
+ .title-box {
+      padding: 10px;
+  }
+ .textweb {
+      padding: 10px;
   }
 }
+
+@media screen and (max-width: 1020px) {
+ .services-mf route {
+      flex-direction: column;
+      max-width: 300px;
+  }
+ .yellow-button {
+      padding: 5px 10px;
+  }
+}
+
+
 
