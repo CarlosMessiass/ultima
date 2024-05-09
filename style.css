@@ -506,10 +506,13 @@ a:hover {
   margin-left: 0px;
   width: 0%;
   bottom: 0;
-  left: 0;
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-100%); /* Desloca para a esquerda em metade do próprio tamanho */
   height: 2px;
   transition: all 500ms ease;
 }
+
+
 
 .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
@@ -1823,6 +1826,25 @@ h3{
   z-index: 99999999;
   margin-right: 10px;
 }
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background-color: #d3b71a; /* Adiciona cor à borda */
+  border-width: 2px; /* Define a largura da borda, se necessário */
+
+  /* background: no-repeat center center; */
+  background-size: 100% 100%;
+}
+
+@media (max-width: 767px) { /* Defina o estilo apenas para telas menores */
+  .text-right-mobile {
+      text-align: center;
+  }
+}
+
 
 
 
