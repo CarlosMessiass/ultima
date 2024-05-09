@@ -1415,6 +1415,17 @@ footer .copyright {
   color: #d3b71a; 
 }
 
+/* Rodapé mobile */
+
+.rdp-mobile {
+  background-color: #000000;
+  color: #fff;
+}
+
+.rdp-mobile a:hover {
+  color: #f0d32a;
+}
+
 /* Cards */
 
 .card {
@@ -1818,10 +1829,28 @@ h3{
 
 .btn-abrir-menu i {
   color: #f0d32a;
-  font-size: 50px;
+  font-size: 0px;
   position: absolute;
   z-index: 99999999;
   margin-right: 10px;
+}
+
+/* Rodapé responsivo */
+
+@media (min-width: 768px) {
+  .footer-mobile {
+       display: none;
+   }
+}
+
+
+@media (max-width: 767px) {
+  .site-footer {
+       display: none;
+   }
+  .footer-mobile {
+       display: block;
+   }
 }
 
 
