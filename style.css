@@ -509,10 +509,13 @@ a:hover {
   margin-left: 0px;
   width: 0%;
   bottom: 0;
-  left: 0;
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-100%); /* Desloca para a esquerda em metade do próprio tamanho */
   height: 2px;
   transition: all 500ms ease;
 }
+
+
 
 .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
@@ -619,60 +622,6 @@ a:hover {
   background-color: #0078ff;
 }
 
-/*--/ Hamburger Navbar /--*/
-
-.navbar-toggler {
-  position: relative;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active {
-  outline: 0;
-}
-
-.navbar-toggler span {
-  display: block;
-  background-color: #fff;
-  height: 3px;
-  width: 25px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  left: 0;
-  opacity: 1;
-}
-
-.navbar-toggler span:nth-child(1),
-.navbar-toggler span:nth-child(3) {
-  transition: -webkit-transform .35s ease-in-out;
-  transition: transform .35s ease-in-out;
-  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-  position: absolute;
-  left: 12px;
-  top: 10px;
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-  opacity: 0.9;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 12px;
-  visibility: hidden;
-  background-color: transparent;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-  position: absolute;
-  left: 12px;
-  top: 10px;
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-  opacity: 0.9;
-}
 
 /*======================================
 //--//-->   INTRO
@@ -1472,6 +1421,17 @@ footer .copyright {
   color: #d3b71a; 
 }
 
+/* Rodapé mobile */
+
+.rdp-mobile {
+  background-color: #000000;
+  color: #fff;
+}
+
+.rdp-mobile a:hover {
+  color: #f0d32a;
+}
+
 /* Cards */
 
 .card {
@@ -1662,6 +1622,13 @@ h6{
   color: #f0d32a;
 }
 
+.newimg img {
+  width: 600px;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 180px;
+}
+
  /* HEAD */
 
 .btn-resp button {
@@ -1788,93 +1755,62 @@ h6 span::after{
   }
 }
 
-/* menu mobile */
+/* Menu Mobile */
 
-.menu-mobile {
-  background-color: #000000;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 99999;
-  width: 0%;
-  overflow: hidden;
-  transition: .2s;
-}
-
-.menu-mobile.abrir-menu {
-  width: 50%;
-}
-
-.menu-mobile.abrir-menu ~ .overlay-menu {
-  display: block;
-}
-
-.menu-mobile ul {
-  text-align: right;
-  list-style-type: none;
-}
-
-.menu-mobile ul li a {
-  color: #f0d32a;
-  font-size: 20px;
-  font-weight: 300;
-  padding: 20px 8%;
-  display: block;
-}
-
-.menu-mobile ul li a:hover {
-  background-color: #fff;
-  color: #000000;
-}
-
-.menu-mobile .btn-fechar {
-  padding: 20px 5%;
-}
-
-.menu-mobile .btn-fechar i {
-  color: #f0d32a;
-  font-size: 30px;
-}
-
-.overlay-menu {
-  background-color: #00000085;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 88888;
-  display: none;
-}
-
-
-.btn-abrir-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  cursor: pointer;
-  font-size: 80px;
-  color: #f0d32a;
-  cursor: pointer;
-}
-
-.btn-abrir-menu i {
-  font-size: 24px;
-  color: #fff;
-}
-
-#btn-menu {
-  right: 20px;
-}
 h3{
   text-align: center;
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 #service span{
   color: #f0d32a;
 }
+=======
+
+.btn-abrir-menu i {
+  color: #f0d32a;
+  font-size: 0px;
+  position: absolute;
+  z-index: 99999999;
+  margin-right: 10px;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  border-width: 2px; 
+  background-size: 100% 100%;
+}
+
+@media (max-width: 767px) {
+  .text-right-mobile {
+      text-align: center;
+  }
+}
+
+
+/* Rodapé responsivo */
+
+@media (min-width: 768px) {
+  .footer-mobile {
+       display: none;
+   }
+}
+
+
+@media (max-width: 767px) {
+  .site-footer {
+       display: none;
+   }
+  .footer-mobile {
+       display: block;
+   }
+}
+
+
+>>>>>>> 98230da4fba90da90da1b5f0b894bea85195b6a6
 
 
