@@ -110,6 +110,9 @@ a:hover {
   display: flex;
   column-gap: normal;
 }
+.row img{
+ justify-items: right;
+}
 
 .display-6 {
   font-size: 2rem;
@@ -1652,7 +1655,7 @@ h6{
 }
 
 .next-arrow {
-  right: 0;
+  right: 100;
 }
 
 .card span {
@@ -1870,8 +1873,8 @@ h3{
   align-items: center;
   justify-content: center;
 }
-
-
-
+#service span{
+  color: #f0d32a;
+}
 
 
