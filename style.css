@@ -1629,6 +1629,13 @@ h6{
   margin-top: 180px;
 }
 
+.newimg2 img {
+  width: 400px;
+  position: absolute;
+  margin-left: 640px;
+  margin-top: -390px;
+}
+
  /* HEAD */
 
 .btn-resp button {
@@ -1762,11 +1769,7 @@ h3{
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
-#service span{
-  color: #f0d32a;
-}
-=======
+ /* HEAD */
 
 .btn-abrir-menu i {
   color: #f0d32a;
@@ -1809,8 +1812,5 @@ h3{
        display: block;
    }
 }
-
-
->>>>>>> 98230da4fba90da90da1b5f0b894bea85195b6a6
 
 
