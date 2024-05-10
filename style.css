@@ -1619,6 +1619,13 @@ h6{
   color: #f0d32a;
 }
 
+.newimg img {
+  width: 600px;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 180px;
+}
+
  /* HEAD */
 
 .btn-resp button {
@@ -1745,85 +1752,8 @@ h6 span::after{
   }
 }
 
-/* menu mobile */
+/* Menu Mobile */
 
-.menu-mobile {
-  backdrop-filter: blur(10px);
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 99999;
-  width: 0%;
-  overflow: hidden;
-  transition: .4s;
-}
-
-.menu-mobile.abrir-menu {
-  width: 50%;
-}
-
-.menu-mobile.abrir-menu ~ .overlay-menu {
-  display: block;
-}
-
-.menu-mobile ul {
-  text-align: right;
-  list-style-type: none;
-}
-
-.menu-mobile ul li a {
-  color: #f0d32a;
-  font-size: 20px;
-  font-weight: 300;
-  padding: 20px 8%;
-  display: block;
-}
-
-.menu-mobile ul li a:hover {
-  background-color: #fff;
-  color: #000000;
-}
-
-.menu-mobile .btn-fechar {
-  padding: 20px 5%;
-}
-
-.menu-mobile .btn-fechar i {
-  color: #f0d32a;
-  font-size: 30px;
-}
-
-.overlay-menu {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 88888;
-  display: none;
-}
-
-
-.btn-abrir-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  cursor: pointer;
-  font-size: 80px;
-  color: #f0d32a;
-  cursor: pointer;
-}
-
-.btn-abrir-menu i {
-  font-size: 24px;
-  color: #fff;
-}
-
-#btn-menu {
-  right: 20px;
-}
 h3{
   text-align: center;
   align-items: center;
@@ -1843,14 +1773,11 @@ h3{
   height: 1.5em;
   vertical-align: middle;
   content: "";
-  background-color: #d3b71a; /* Adiciona cor à borda */
-  border-width: 2px; /* Define a largura da borda, se necessário */
-
-  /* background: no-repeat center center; */
+  border-width: 2px; 
   background-size: 100% 100%;
 }
 
-@media (max-width: 767px) { /* Defina o estilo apenas para telas menores */
+@media (max-width: 767px) {
   .text-right-mobile {
       text-align: center;
   }
