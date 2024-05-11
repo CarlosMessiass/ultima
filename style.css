@@ -20,7 +20,9 @@ h6 {
 .button {
   display: inline-block;
 }
-
+.col-lg-5 p{
+  text-align: center;
+}
 
 
 
