@@ -1908,3 +1908,7 @@ h3{
   margin-left: 850px;
   margin-top: -400px;
 }
+
+.col-lg-5 p {
+  text-align: center;
+}
