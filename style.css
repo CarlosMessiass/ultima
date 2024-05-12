@@ -17,14 +17,32 @@ h6 {
   text-align: center;
 }
 
-.button {
-  display: inline-block;
+
+.envolta2{
+  text-align: center;
 }
-.col-lg-5 p{
+.textweb{
+  text-align: center;
+}
+.title-a{
+  text-align: center;
+}
+p{
   text-align: center;
 }
 
+.button {
+  display: inline-block;
+}
+.p{
+  text-align: center;
+  justify-content: center;
+  display: ;
+}
 
+.col-lg-5 p{
+  text-align: center;
+}
 
 
 a {
@@ -223,9 +241,47 @@ a:hover {
 }
 
 /*--/ Title A /--*/
+.image-column {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+}
+
+@media (min-width: 992px) { /* Apply the following styles on screens larger than or equal to 992px */
+  .image-column {
+      justify-content: flex-end; /* Align content to the right */
+  }
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  margin-left: auto; /* Move the image to the right within its container */
+}
 
 .title-box {
   margin-bottom: 4rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  flex: 2;
+}
+
+.image-container {
+  flex: 1;
+  justify-content: center;
+ 
+ 
+}
+
+.image-container img {
+  float: right;
+  margin-left: 10px;
 }
 
 .title-a {
@@ -234,6 +290,8 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  margin-inline-start: 10px;
+ gap:50px
 }
 
 .subtitle-a {
@@ -1615,6 +1673,10 @@ h6{
 .prev-arrow {
   left: 0;
 }
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
 
 .next-arrow {
   right: 100;
@@ -1627,16 +1689,22 @@ h6{
 .newimg img {
   width: 600px;
   position: absolute;
-  margin-left: 550px;
-  margin-top: 180px;
+  
+ 
+}
+.image-container {
+  display: grid;
+  justify-items: end; /* align to right */
+  align-items: center; /* center vertically */
 }
 
 .newimg2 img {
   width: 400px;
   position: absolute;
-  margin-left: 640px;
-  margin-top: -390px;
+  margin-left: 64px;
+  margin-top: -39px;
 }
+
 
  /* HEAD */
 
