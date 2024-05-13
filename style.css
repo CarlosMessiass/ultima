@@ -13,6 +13,21 @@ h6 {
   color: #1e1e1e;
   text-align: center;
 }
+.button-container {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+}
+.p{
+  text-align: center;
+  justify-content: center; 
+}
+
+.col-lg-5 p{
+  text-align: center;
+}
 
 
 a {
@@ -63,7 +78,7 @@ a {
  color: rgb(255, 255, 255);
 }
 a:hover {
-  color: #0078ff;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -1251,7 +1266,7 @@ footer .copyright {
 }
 
 .cookies-msg .cookies-btn button {
-  background-color: #d3b71a;
+  background-color: #f0d32a;
   color: #fff;
   font-weight: 700;
   font-size: 18px;
@@ -1444,18 +1459,8 @@ footer .copyright {
   color: #ffd900;
 }
 
-.col-md-6 img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.2);
-}
-
 .container h3 span {
   color: #f0d32a;
-}
-
-.col-md-6 img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.2);
 }
 
 .yellow-button {
@@ -1587,6 +1592,17 @@ h6{
   cursor: pointer;
   z-index: 1;
 }
+.title-box{
+  text-align: center;
+
+}
+.image-container{
+  justify-content: right;
+  align-items: center;
+}
+.textweb{
+  text-align: center;
+}
 
 .prev-arrow {
   left: 0;
@@ -1605,6 +1621,13 @@ h6{
   position: absolute;
   margin-left: 550px;
   margin-top: 180px;
+}
+
+.newimg2 img {
+  width: 400px;
+  position: absolute;
+  margin-left: 640px;
+  margin-top: -390px;
 }
 
  /* HEAD */
@@ -1740,6 +1763,7 @@ h3{
   align-items: center;
   justify-content: center;
 }
+ /* HEAD */
 
 .btn-abrir-menu i {
   color: #f0d32a;
@@ -1805,5 +1829,28 @@ h3{
   margin-top: calc(-100* var(--bs-gutter-y));
   margin-right: calc(-.5* var(--bs-gutter-x));
   margin-left: calc(-.5* var(--bs-gutter-x));
+/* Imagens Responsivas */
+
+@media (max-width: 767px) {
+  .ilustrativa-img {
+    display: none;
+  }
 }
 
+@media (max-width: 767px) {
+  .about-img {
+    margin-left: -100px;
+  }
+}
+
+.ilustrativa-img {
+  position: absolute;
+  margin-left: -180px;
+  margin-top: 150px;
+}
+
+.ilustrativa2-img {
+  position: absolute;
+  margin-left: 850px;
+  margin-top: -400px;
+}

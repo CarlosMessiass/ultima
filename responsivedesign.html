@@ -35,39 +35,36 @@
 
 <body id="page-top">
   
-    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll" href="#page-top">  <img src="img/logo_semfundo.png" width="180" height="auto" alt="Logo">
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-                    aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-                <header id="header">
-            </button>
-            <header id="header">
-            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll active" href="index.html#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="index.html#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="index.html#service">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="index.html#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="index.html#contact">Contato</a>
-                    </li>
-                </ul>
-            </div>
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top">
+    <div class="container">
+        <a class="navbar-brand js-scroll" href="#page-top">
+            <img src="img/logo_semfundo.png" width="180" height="auto" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item text-right-mobile">
+                    <a class="nav-link js-scroll" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item text-right-mobile">
+                    <a class="nav-link js-scroll" href="index.html#about">Sobre</a>
+                </li>
+                <li class="nav-item text-right-mobile">
+                    <a class="nav-link js-scroll" href="index.html#service">Serviços</a>
+                </li>
+                <li class="nav-item text-right-mobile"> <!-- Adicione a classe text-right-mobile aqui -->
+                    <a class="nav-link js-scroll" href="index.html#work">Work</a>
+                </li>
+                <li class="nav-item text-right-mobile">
+                    <a class="nav-link js-scroll" href="index.html#contact">Contato</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>  
+
    <div class="whats">
     <a href=" https://wa.me/5511940090003?text=Olá, Gostaria de fazer um orçamento!!" target="_blank">
     <img src="img/whats.png" width="50" alt="Fale Conosco pelo WhatsApp" title="Fale Conosco pelo WhatsApp">
@@ -86,12 +83,15 @@
     </style>
     <br>
     
+    
     <section id="service" class="services-mf route">
-      
-            <div class="title-box text-center">
-              <h3 id="" class="title-a">
-                <br>Responsive <span>Designer</span><br>
-              </h3>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="title-box text-center"><br><br><br>
+                      <h3 id="" class="title-a ">
+                          Responsive <span>Designer</span>
+                      </h3>
               <div class="line-mf"></div><br><br>
             
               <br>
@@ -102,20 +102,30 @@
                   <div class="title-box text-center">
                       <h3 id="" class="title-a"
                           data-aos="fade-up"
-                          data-aos-delay="800"
-                          data-aos-duration="400"
+                          data-aos-delay="500"
+                          data-aos-duration="500"
                           data-aos-easing="ease-in-out">
                           Está buscando seu Site <span>100%</span> Responsivo? <br>Veio no Lugar certo!
                       </h3>
                       
-                      <div class="line-mf"></div>
-                      
                       <div>
                         
                       
-                      <p class="lead">O design responsivo é uma abordagem de design da web que visa fornecer uma experiência de usuário ideal em uma ampla gama de dispositivos e tamanhos de tela, como...</p>
-                <section id="saiba-mais" class="section-with-padding"></section>
-                <button onclick="scrollToSection('sistemapdv')" name="serviço" class="button button-a button-big button-rouded">Solicite um Orçamento</button>
+                      <p 
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-duration="400"
+                        data-aos-easing="ease-in-out"
+                        class="lead">O design responsivo é uma abordagem de design da web que visa fornecer uma experiência de usuário ideal em uma ampla gama de dispositivos e tamanhos de tela, como...
+                      </p>
+                
+               <section id="saiba-mais" class="section-with-padding"></section>
+               <div class="envolta2">
+                <a href="https://wa.me/5511940090003?text=Ola, Gostaria de fazer um orcamento!!" target="_blank">                        
+                  <section id="saiba-mais" class="section-with-padding"></section>
+                  <button onclick="scrollToSection('sistemapdv')" name="serviço" class="button button-a button-big button-rouded">Solicite um Orçamento <i class="fa-brands fa-whatsapp"></i></button>
+                </a>
+              </div>
                         
                     </div>
                     
@@ -131,10 +141,10 @@
                 
                   <img
                       data-aos="fade-up"
-                      data-aos-delay="800"
-                      data-aos-duration="400"
+                      data-aos-delay="500"
+                      data-aos-duration="500"
                       data-aos-easing="ease-in-out"
-                      src="img/Captura de tela 2024-05-01 230449.png" width="300px" 
+                      src="img/Captura de tela 2024-05-09 223042.png.png" width="250px" 
                       alt="">
                       
                 
@@ -142,10 +152,7 @@
               </div>
           </div>
       </div>
-  </section>
-  
     </section>
-  </section>
   
 
   
