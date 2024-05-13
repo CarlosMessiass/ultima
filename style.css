@@ -1051,7 +1051,6 @@ a:hover {
 footer {
   text-align: center;
   color: #fff;
-  padding-bottom: 4rem;
 }
 
 footer .copyright {
@@ -1359,8 +1358,9 @@ footer .copyright {
 
 .site-footer {
   background: #000000;
+  padding-top: 25px;
+  padding-bottom: 5px;
   color: #ffffff;
-  padding: 20px 4%;
 }
 
 .site-footer .logo-rodapé {
@@ -1413,28 +1413,6 @@ footer .copyright {
     flex: 1 1 auto;
     margin: 5px;
   }
-
-.by {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-right: 900px;
-  margin-top: -30px;
-  font-size: 12px;
-}
-
-.by li {
-  margin-bottom: 10px;
-}
-
-.by a {
-  text-decoration: none;
-  color: #ffffff; 
-}
-
-.by a:hover {
-  color: #d3b71a; 
-}
 
 /* Rodapé mobile */
 
@@ -1824,11 +1802,33 @@ h3{
   .site-footer {
        display: none;
    }
-  .footer-mobile {
+  .rdp-mobile {
        display: block;
    }
 }
 
+.col-md-12-rodape {
+  position: relative;
+}
+
+.container-rodape {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row-rodape {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-100* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
 /* Imagens Responsivas */
 
 @media (max-width: 994px) {
