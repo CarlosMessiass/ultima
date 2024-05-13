@@ -1158,7 +1158,7 @@ footer .copyright {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 994px) {
   .about-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
@@ -1804,7 +1804,7 @@ h3{
   background-size: 100% 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 994px) {
   .text-right-mobile {
       text-align: center;
   }
@@ -1813,14 +1813,14 @@ h3{
 
 /* Rodapé responsivo */
 
-@media (min-width: 768px) {
+@media (min-width: 994px) {
   .footer-mobile {
        display: none;
    }
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 994px) {
   .site-footer {
        display: none;
    }
@@ -1831,17 +1831,37 @@ h3{
 
 /* Imagens Responsivas */
 
-@media (max-width: 767px) {
+@media (max-width: 994px) {
   .ilustrativa-img {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 994px) {
   .about-img {
     margin-left: -100px;
   }
 }
+
+@media (max-width: 994px) {
+  .linha {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .img-fluid2 {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .img-fluid {
+    display: none;
+  }
+}
+
+
 
 .ilustrativa-img {
   position: absolute;
@@ -1854,3 +1874,20 @@ h3{
   margin-left: 850px;
   margin-top: -400px;
 }
+
+.linha {
+  color: #f0d32a;
+}
+
+.img-fluid {
+  position: absolute;
+  margin-left: 420px;
+  margin-top: -420px;
+}
+
+.img-fluid2 {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -550px;
+}
+
