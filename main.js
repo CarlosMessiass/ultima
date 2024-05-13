@@ -245,7 +245,7 @@ $(document).ready(function() {
 
 
 
-  // Add an event listener to the buttons
+  // Botões saiba mais
   
 document.addEventListener("DOMContentLoaded", function() {
 	const readMoreBtn = document.querySelector(".saiba-mais-btn");
