@@ -1373,15 +1373,16 @@ footer .copyright {
   margin-left: 0;
 }
 
-.sobre-rdp {
-  position: relative;
-  top: -70px;
-  margin-left: 50%;
+.sobre-rdp p {
+  top: 80px;
+  margin-left: 10px;
 }
 
+
+
 .site-footer h6 {
-  margin-bottom: 10px;
-  color: #d3b71a;
+  margin-left: 80px;
+  color: #f0d32a;
 }
 
 .site-footer .footer-links {
@@ -1395,13 +1396,17 @@ footer .copyright {
   margin: 5px 42%;
 }
 
+.footer-links li a {
+  margin-left: 88px;
+}
+
 .site-footer .footer-links a {
   color: #ffffff;
   text-decoration: none;
 }
 
 .site-footer .footer-links a:hover {
-  color: #d3b71a;
+  color: #f0d32a;
 }
 
 .site-footer .copyright-text {
@@ -1409,10 +1414,14 @@ footer .copyright {
   text-align: center;
 }
 
-  .site-footer .footer-links li {
-    flex: 1 1 auto;
-    margin: 5px;
-  }
+.site-footer .footer-links li {
+  flex: 1 1 auto;
+  margin: 5px;
+}
+
+.copyright-text a:hover {
+  color: #f0d32a;
+}
 
 /* Rodapé mobile */
 
@@ -1534,6 +1543,22 @@ h6{
   transform: translateY(-5px);
 }
 
+.footer-mobile {
+  background-color: #000000;
+  padding: 60px 6%;
+}
+
+@media (min-width: 768px) {
+  .footer-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    display: none;
+  }
+}
 
 /* Card slide */
 
@@ -1705,7 +1730,7 @@ h6 span::after{
 }
 
 .carousel-caption h2 {
-  color: #d3b71a;
+  color: #f0d32a;
   height: 100px;
   margin-right: 0;
   margin-left: 0;
@@ -1788,29 +1813,6 @@ h3{
   }
 }
 
-
-/* Rodapé responsivo */
-
-@media (min-width: 994px) {
-  .footer-mobile {
-       display: none;
-   }
-}
-
-
-@media (max-width: 994px) {
-  .site-footer {
-       display: none;
-   }
-  .rdp-mobile {
-       display: block;
-   }
-}
-
-.col-md-12-rodape {
-  position: relative;
-}
-
 .container-rodape {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -1829,6 +1831,7 @@ h3{
   margin-top: calc(-100* var(--bs-gutter-y));
   margin-right: calc(-.5* var(--bs-gutter-x));
   margin-left: calc(-.5* var(--bs-gutter-x));
+}
 /* Imagens Responsivas */
 
 @media (max-width: 994px) {
@@ -1859,8 +1862,31 @@ h3{
   .img-fluid {
     display: none;
   }
+} 
+
+@media (max-width: 778px) {
+  .carousel-inner {
+    display: none;
+  }
 }
 
+@media (max-width: 990px) {
+  .shadow2 {
+    margin-right: -25px;
+  }
+}
+
+@media (max-width: 990px) {
+  .title-a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 990px) {
+  #home h1 {
+    font-size: 55px;
+  }
+}
 
 
 .ilustrativa-img {
@@ -1890,4 +1916,3 @@ h3{
   margin-left: 50px;
   margin-top: -550px;
 }
-
